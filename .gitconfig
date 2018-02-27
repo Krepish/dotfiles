@@ -1,0 +1,18 @@
+[user]
+	name = pushkar
+	email = pushkar@yandex-team.ru
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	hist = log --graph --decorate --oneline
+[core]
+	editor = vim
+
+[filter "lfs"]
+    	clean = git-lfs clean %f
+    	smudge = git-lfs smudge --skip %f
+    	process = git-lfs filter-process --skip
+    	required = true
